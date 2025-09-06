@@ -3,13 +3,13 @@ import React from 'react'
 const Table = ({ columns, data, keyField = 'id', stickyHeader = true }) => {
   return (
     <div className="overflow-x-auto" style={{ maxWidth: '960px', margin: '0 auto' }}>
-      <table className="min-w-full text-center border-separate border-spacing-y-0" style={{ margin: '0 auto' }}>
+      <table className="min-w-full text-center border-separate border-spacing-y-0 text-xs sm:text-sm" style={{ margin: '0 auto' }}>
         <thead className={stickyHeader ? 'sticky top-12 z-10' : ''}>
           <tr>
             {columns.map((col) => (
               <th
                 key={col.key || col.accessor}
-                className="px-3 py-2 text-gray-200 text-xs uppercase text-center"
+                className="px-2 py-2 sm:px-3 sm:py-2 text-gray-200 text-[10px] sm:text-xs uppercase text-center"
                 style={{
                   background: 'rgba(17, 24, 39, 0.75)',
                   backdropFilter: 'blur(4px)'
@@ -26,7 +26,7 @@ const Table = ({ columns, data, keyField = 'id', stickyHeader = true }) => {
               {columns.map((col) => (
                 <td
                   key={col.key || col.accessor}
-                  className="px-3 py-3 text-sm text-center"
+                  className="px-2 py-2 sm:px-3 sm:py-3 text-xs sm:text-sm text-center"
                   style={{
                     background: 'rgba(255, 255, 255, 0.08)',
                     color: '#F9FAFB',

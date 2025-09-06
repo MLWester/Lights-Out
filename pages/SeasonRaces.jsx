@@ -61,15 +61,15 @@ const SeasonRaces = () => {
                       display: 'grid',
                       gridTemplateColumns: 'auto 1fr auto',
                       alignItems: 'center',
-                      gap: '12px',
-                      background: 'rgba(255,255,255,0.95)',
+                      gap: '10px',
+                      background: 'rgba(255,255,255,0.90)',
                       color: '#111827',
-                      padding: '14px 16px',
-                      borderRadius: '14px',
+                      padding: '12px 14px',
+                      borderRadius: '12px',
                       textDecoration: 'none',
                       border: '1px solid #e5e7eb',
                       transition: 'transform .15s ease, box-shadow .15s ease',
-                      minHeight: '84px'
+                      minHeight: '76px'
                     }}
                     onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 20px rgba(0,0,0,0.12)'; }}
                     onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}
