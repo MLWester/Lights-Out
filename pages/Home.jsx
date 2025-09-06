@@ -14,11 +14,10 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: .3 }}
         className="text-white"
-        style={{ marginTop: '-28vh' }}
       >
         <img src={LOLogoSmall} alt="Lights Out" className="block mx-auto"
-          style={{ height: '420px', width: 'auto', maxHeight: '420px', marginBottom: '0px' }} />
-        <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight mt-1">Lights Out – F1 Explorer</h1>
+          style={{ height: '240px', width: 'auto', maxHeight: '240px', marginBottom: '12px' }} />
+        <h1 className="text-4xl sm:text-5xl font-semibold tracking-tight">Lights Out – F1 Explorer</h1>
         <p className="mt-3 text-white/90 text-lg">Browse seasons, races, results, drivers and constructors.</p>
         <div className="mt-8" style={{ display: 'inline-flex', gap: '16px' }}>
           <button

@@ -16,8 +16,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full shadow-sm" 
     style={{ backgroundColor: '#0F172A', color: '#fff', zIndex: 9999, position: 'fixed', width: '100vw' }}>
-      <div className="w-full overflow-hidden" 
-      style={{ height: '48px', display: 'grid', gridTemplateColumns: 'auto 1fr auto', alignItems: 'center', paddingInline: '16px' }}>
+      <div className="w-full overflow-hidden"
+      style={{ height: '48px', display: 'grid', gridTemplateColumns: 'auto 1fr auto', alignItems: 'center', paddingInline: '12px' }}>
         {/* Logo left */}
         <NavLink to="/" aria-label="Lights Out Home" className="shrink-0" style={{ justifySelf: 'start' }}>
           <img src={LOLogoSmall} alt="Lights Out" className="block object-contain" 
@@ -25,8 +25,8 @@ const Navbar = () => {
         </NavLink>
 
         {/* Centered links */}
-        <ul className="list-none" style={{ display: 'flex', gap: '28px', 
-          alignItems: 'center', whiteSpace: 'nowrap', height: '100%', margin: 0, padding: 0, justifySelf: 'center', justifyContent: 'center' }}>
+        <ul className="list-none"
+          style={{ display: 'flex', gap: '16px', alignItems: 'center', whiteSpace: 'nowrap', height: '100%', margin: 0, padding: 0, justifySelf: 'center', justifyContent: 'center', overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
           <NavLink to="/" style={linkStyle}>Home</NavLink>
           <NavLink to="/drivers" style={linkStyle}>Drivers</NavLink>
           <NavLink to="/constructors" style={linkStyle}>Constructors</NavLink>
